@@ -169,9 +169,6 @@ body{
     box-shadow:0px 0px 29px 0.94px rgba(0, 0, 0, 0.05);
     background-image:linear-gradient(rgba(255, 244, 220, 1), rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
 }
-.elementary-card img{
-    
-}
 .elementary-title{
     font-size: 1.5rem;
     font-weight: 700;
@@ -246,12 +243,8 @@ body{
 
 /* section part two style start */
 .section-container{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
     box-shadow:0px 0px 29px 0.94px rgba(0, 0, 0, 0.05);
-    background-image:linear-gradient(to bottom,rgba(255, 244, 220, 1), rgba(255, 244, 220, 1),#FEB634), url("../assets/bg.png")
+    background-image:linear-gradient(to bottom,rgba(255, 244, 220, 1), rgba(255, 244, 220, 1),#FEB634)
 }
 .stories-section{
     width: 1160px;
@@ -260,6 +253,11 @@ body{
     gap: 60px;
     justify-content: center;
     margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    background-image: url("../assets/bg.png");
 }
 .stories-title{
     font-size: 2.8rem;
@@ -310,26 +308,26 @@ body{
     color:#666666 ;
 }
 .stories-two-container{
+    /* width: 1060px; */
     display: grid;
-    column-gap: 19px;
-    row-gap: 19px;
     grid-template-columns: repeat(2,1fr);
-    
+    row-gap: 19px;
+    column-gap: 19px;    
 }
-.stroies-2{
+.stories-2{
     box-shadow:0px 0px 29px 0.94px rgba(0, 0, 0, 0.05);
     background-color: #FFFFFF;
     border-radius: 16px;
 }
-.stroies-2 img{
+.stories-2 img{
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
 }
-.stroies-2-content{
+.stories-content{
     margin-left: 30px;
     margin-top:-36px;
 }
-.stories-2-btn{
+.stories-btn{
    background-color: #95B226; 
    border-radius: 47px;
    color: #FFFFFF;
@@ -340,7 +338,7 @@ body{
    border: none;
   
 }
-.stories-2-description{
+.stories-description{
     font-size: 0.9rem;
     font-weight: 700;
     line-height: 28px;
@@ -414,7 +412,8 @@ body{
     }
     .kids-title, 
     .menu-ul,
-    .btn-contact,.arrow-container{
+    .btn-contact,
+    .arrow-container, .stories-card-1{
         display: none;
     }
     
@@ -505,5 +504,41 @@ body{
         border-radius: 19px;
         box-shadow:0px 0px 29px 0.94px rgba(0, 0, 0, 0.05);
         background-image: linear-gradient(rgba(238, 225, 255, 1), rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
+    }
+    .stories-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
+        gap: 16px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .stories-section{
+        max-width: 100%;
+        /* border: 1px solid red; */
+        /* margin-right:-80; */
+    }
+    .stories-two-container{
+        /* width: 70%; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        flex: 1;
+        row-gap: 19px;
+        column-gap: 19px; 
+        /* border: 1px solid red; */
+        /* text-align: ; */
+        padding:20px;   
+    }
+    .stories-2 img{
+        max-width: 100%;
+        /* height: auto; */
+    }
+    .stories-btn{
+        padding:0px 10px;
+    }
+    .footer-container{
+        flex-direction: column;
     }
 }

@@ -351,6 +351,7 @@ body{
     border: none;
     margin-bottom: 60px; 
 }
+/* footer section start */
 .footer{
     background-color: #01ACFD;
     padding:50px 20px ;
@@ -399,7 +400,7 @@ body{
     margin-top: 24px;
 }
 /* footer part end */
-
+/* start meadia screen query */
 @media screen and (max-width:576px) {
     body{
       width: 100%;
@@ -412,7 +413,7 @@ body{
     .arrow-container, .stories-card-1{
         display: none;
     }
-    
+    /*header responsive start */
     .header{
         width: 100%; 
     }
@@ -425,7 +426,7 @@ body{
      .bar{
         display: block;
      }
-    
+    /* banner responsive start */
     .banner-container{
         display: flex;
         flex-direction: column-reverse;
@@ -452,6 +453,7 @@ body{
         line-height:1.5rem;
         margin-bottom:10px;    
     }
+    /* curriculum section start */
     .curriculum-title{
         font-size: 1.6rem;
         font-weight: 700;
@@ -507,6 +509,7 @@ body{
         margin: 0px;
         padding: 0px;
     }
+    /* stories section start */
     .stories-section{
         max-width: 100%;
     }
@@ -524,6 +527,7 @@ body{
     .stories-btn{
         padding:0px 10px;
     }
+    /* footer section start  */
     .footer-container{
         flex-direction: column;
     }

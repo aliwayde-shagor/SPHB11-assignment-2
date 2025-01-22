@@ -41,7 +41,6 @@ body{
  }
  .menu-links{
     text-decoration: none;
-    /* margin: 0px 32px; */
     font-size:1.2rem;
     font-weight: 700;
     line-height: 30px;
@@ -308,7 +307,6 @@ body{
     color:#666666 ;
 }
 .stories-two-container{
-    /* width: 1060px; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     row-gap: 19px;
@@ -405,8 +403,6 @@ body{
 @media screen and (max-width:576px) {
     body{
       width: 100%;
-      /* margin: 0;
-      padding: 0; */
       overflow-x: hidden;
       overflow-y: auto;
     }
@@ -424,8 +420,7 @@ body{
       display: flex;
       justify-content: space-between;
       width: 100%;
-      padding: 0 10px;
-      /* box-sizing: border-box; */
+      border-bottom:1px solid #F0AA00;
     }
      .bar{
         display: block;
@@ -463,7 +458,7 @@ body{
         line-height: 57.5px;
         color:#000000;
         text-align: center;
-        margin-bottom: 80px;
+        margin-bottom:80px;
      }
     .kinder-section{
         display: flex;
@@ -474,7 +469,6 @@ body{
         text-align: center;
         width: 100%;
         gap: 20px;
-        margin-bottom: 80px;
     }
     .kinder-card,
     .elementary-card,
@@ -483,7 +477,6 @@ body{
     }
     .kinder-card{
         margin: 10px auto;
-        /* padding:20px; */
         width: 90%;
         box-shadow:0px 0px 29px 0.94px rgba(0, 0, 0, 0.05);
         border-radius:19px;
@@ -510,30 +503,23 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* flex-direction: column; */
         gap: 16px;
         margin: 0px;
         padding: 0px;
     }
     .stories-section{
         max-width: 100%;
-        /* border: 1px solid red; */
-        /* margin-right:-80; */
     }
     .stories-two-container{
-        /* width: 70%; */
         display: grid;
         grid-template-columns: repeat(2,1fr);
         flex: 1;
         row-gap: 19px;
         column-gap: 19px; 
-        /* border: 1px solid red; */
-        /* text-align: ; */
         padding:20px;   
     }
     .stories-2 img{
         max-width: 100%;
-        /* height: auto; */
     }
     .stories-btn{
         padding:0px 10px;
